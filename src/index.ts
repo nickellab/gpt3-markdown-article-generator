@@ -19,6 +19,16 @@ const main = async () => {
 
     fs.appendFileSync(`${POSTS_DIR}/${filePath}.md`, answer)
   }
+
+  if (args[2] === 'add-any') {
+    console.log('add-any')
+    const filePath = args[3]
+    const keyword = args[4]
+
+    const answer = await fetchOpenAI(`${keyword}`)
+
+    fs.appendFileSync(`${POSTS_DIR}/${filePath}.md`, answer)
+  }
 }
 
 main()

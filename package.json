@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "ai": "ts-node src/index.ts"
   },
-  "keywords": [],
+  "keywords": [
+    "OpenAI",
+    "GPT-3",
+    "NPM",
+    "NODE"
+  ],
   "author": "ryosuke mori",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3"
   },
